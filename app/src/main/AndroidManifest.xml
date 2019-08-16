@@ -10,7 +10,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity"
+        <activity android:name=".A"
                   android:launchMode="standard">
 
             <intent-filter>
@@ -20,10 +20,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SecondActivity"
+        <activity android:name=".B"
                   android:launchMode="standard"/>
 
-        <activity android:name=".ThirdActivity"
+        <activity android:name=".C"
                   android:launchMode="standard"/>
 
     </application>

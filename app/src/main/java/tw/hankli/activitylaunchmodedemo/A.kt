@@ -6,11 +6,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity.*
 
-class SecondActivity : AppCompatActivity() {
+class A : AppCompatActivity() {
 
     companion object {
         fun start(context: Context) {
-            val i = Intent(context, SecondActivity::class.java)
+            val i = Intent(context, A::class.java)
             context.startActivity(i)
         }
     }
@@ -22,13 +22,13 @@ class SecondActivity : AppCompatActivity() {
         // show the class name
         view_txt.text = this::class.java.simpleName
 
-        // start MainActivity
-        view_btn1.setOnClickListener { MainActivity.start(this) }
+        // start A
+        view_btn1.setOnClickListener { A.start(this) }
 
-        // start SecondActivity
-        view_btn2.setOnClickListener { SecondActivity.start(this) }
+        // start B
+        view_btn2.setOnClickListener { B.start(this) }
 
-        // start ThirdActivity
-        view_btn3.setOnClickListener { ThirdActivity.start(this) }
+        // start C
+        view_btn3.setOnClickListener { C.start(this) }
     }
 }
