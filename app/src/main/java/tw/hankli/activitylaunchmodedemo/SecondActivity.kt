@@ -6,11 +6,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity.*
 
-class MainActivity : AppCompatActivity() {
+class SecondActivity : AppCompatActivity() {
 
     companion object {
         fun start(context: Context) {
-            val i = Intent(context, MainActivity::class.java)
+            val i = Intent(context, SecondActivity::class.java)
             context.startActivity(i)
         }
     }
